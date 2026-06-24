@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Codex GUI
+Comment=Unofficial native Fedora GUI wrapper for the official Codex CLI
+Exec=codex-gui
+Icon=utilities-terminal
+Terminal=false
+Categories=Development;IDE;
+Keywords=Codex;OpenAI;AI;Development;

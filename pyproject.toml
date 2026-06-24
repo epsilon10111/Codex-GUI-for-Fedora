@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-gui-fedora"
+version = "0.1.0"
+description = "Native Fedora GTK/VTE GUI wrapper for the official Codex CLI"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Codex GUI Maintainers" }]
+classifiers = [
+  "Environment :: X11 Applications :: GTK",
+  "Intended Audience :: Developers",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development",
+]
+
+[project.scripts]
+codex-gui = "codex_gui.app:main"
+
+[tool.setuptools.packages.find]
+include = ["codex_gui*"]
