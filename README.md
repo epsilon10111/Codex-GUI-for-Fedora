@@ -1,10 +1,11 @@
-# Codex GUI for Fedora
+# Codex Studio for Fedora
 
-Unofficial native Fedora desktop wrapper for the official `@openai/codex` CLI.
+Unofficial native Fedora desktop client for the official `@openai/codex` CLI.
 
 The app embeds a real VTE terminal inside a GTK window, so Codex keeps its full
-interactive behavior while you get a desktop launcher, workspace picker, login
-launcher, quick task dialog, settings, and persistent configuration.
+interactive behavior while you get a polished desktop shell with a macOS-style
+sidebar, dashboard, session tabs, workspace picker, login launcher, quick task
+dialog, review/resume/doctor actions, and persistent preferences.
 
 ## Why this approach
 
@@ -52,7 +53,7 @@ python3 -m codex_gui.app
 ./scripts/install-fedora.sh
 ```
 
-After installation, launch `Codex GUI` from your app menu or run:
+After installation, launch `Codex Studio` from your app menu or run:
 
 ```bash
 codex-gui
@@ -61,13 +62,21 @@ codex-gui
 ## Features
 
 - Start a full interactive Codex session in a selected workspace.
-- Run `codex login` from the GUI.
+- Start an interactive session with an initial prompt.
 - Run one-off tasks through `codex exec`.
-- Keep command path, default arguments, workspace, environment variables, and
-  theme preference in `~/.config/codex-gui/config.json`.
+- Resume previous sessions with the picker or `--last`.
+- Run `codex review`, `codex doctor`, `codex apply`, `codex update`, and
+  `codex features` from the GUI.
+- Run `codex login` from the GUI.
+- Configure model, profile, sandbox mode, approval policy, web search, terminal
+  font, default arguments, environment variables, and theme preference.
+- Keep preferences and prompt history in `~/.config/codex-gui/config.json`.
 - Use a real PTY through VTE, preserving terminal UI behavior, keyboard input,
   streaming output, colors, and prompts.
 - Install a `.desktop` launcher for Fedora desktops.
+- Use app shortcuts: `Ctrl+N` new session, `Ctrl+Shift+N` prompted session,
+  `Ctrl+Enter` one-off task, `Ctrl+R` resume, `Ctrl+,` preferences, `Ctrl+W`
+  close tab, `Ctrl+Q` quit.
 
 ## Notes
 

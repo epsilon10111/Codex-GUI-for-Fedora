@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "codex-gui-fedora"
 version = "0.1.0"
-description = "Native Fedora GTK/VTE GUI wrapper for the official Codex CLI"
+description = "Native Fedora GTK/VTE desktop client for the official Codex CLI"
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }

@@ -70,7 +70,7 @@ if [[ "$CODEX_FOUND" -eq 0 ]]; then
   printf '  %s/scripts/install-codex-cli-user.sh\n' "$ROOT_DIR" >&2
 fi
 
-printf 'Installed Codex GUI.\n'
+printf 'Installed Codex Studio.\n'
 printf 'Launcher: %s\n' "$LAUNCHER"
 
 case ":$PATH:" in

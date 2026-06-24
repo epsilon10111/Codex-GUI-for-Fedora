@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Codex GUI
-Comment=Unofficial native Fedora GUI wrapper for the official Codex CLI
+Name=Codex Studio
+Comment=Unofficial native Fedora desktop client for the official Codex CLI
 Exec=codex-gui
 Icon=utilities-terminal
 Terminal=false

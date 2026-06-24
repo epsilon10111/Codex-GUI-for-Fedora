@@ -1,7 +1,7 @@
 Name:           codex-gui
 Version:        0.1.0
 Release:        1%{?dist}
-Summary:        Unofficial native Fedora GUI wrapper for the official Codex CLI
+Summary:        Unofficial native Fedora desktop client for the official Codex CLI
 
 License:        MIT
 URL:            https://example.invalid/codex-gui
@@ -17,9 +17,10 @@ Requires:       nodejs
 Requires:       npm
 
 %description
-Codex GUI is an unofficial GTK/VTE desktop wrapper for the official @openai/codex CLI.
+Codex Studio is an unofficial GTK/VTE desktop client for the official @openai/codex CLI.
 It embeds the CLI in a real PTY and adds a Fedora desktop launcher, workspace
-picker, settings, login launcher, and one-off task dialog.
+picker, settings, session dashboard, login launcher, review, resume, doctor,
+and one-off task dialog.
 
 %prep
 %autosetup
